@@ -1,11 +1,8 @@
-/**
- * Site header
- */
+//Site header
 .site-header {
     border-top: 5px solid $grey-color-dark;
     min-height: 100px;
 
-    // Positioning context for the mobile navigation icon
     position: relative;
     text-align:center;
 
@@ -25,7 +22,6 @@
     margin: 0 auto;
     color: $text-color;
 
-
     &,
     &:visited {
         color: $grey-color-dark;
@@ -33,20 +29,17 @@
 }
 
 .site-nav {
-    //float: right;
     line-height: 56px;
 
     .menu-icon {
         display: none;
     }
 
-    .page-link {
+    .site-link {
         color: $text-color;
         line-height: $base-line-height;
         text-transform: $header-uppercase;
-        -webkit-transition: border-bottom 0.2s ease-in-out;
 
-        // Gaps between nav items, but not on the first one
         &:not(:first-child) {
             margin-left: 20px;
         }
@@ -54,61 +47,20 @@
         &:hover{
             border-bottom: solid 1px $grey-color-dark;
         }
-
     }
 
-    @include media-query($on-palm) {
-      position: absolute;
-        top: 9px;
-        right: 30px;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
-
-        .menu-icon {
-            display: block;
-            float: right;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
-
-            > svg {
-                width: 18px;
-                height: 15px;
-
-                path {
-                    fill: $grey-color-dark;
-                }
-            }
-        }
-        .trigger {
-            clear: both;
-            display: none;
-        }
-
-        &:hover .trigger {
-            display: block;
-            padding-bottom: 5px;
-        }
-
-        .page-link {
-            display: block;
-            padding: 5px 10px;
-        }
+    .selected {   
+        border-bottom: solid 1px $grey-color-dark;
     }
 }
 
-/**
- * Projects
- */
+//Site content
+.site-content {
+    margin-bottom: $spacing-unit * 3;
+}
 
 
-/**
- * Site footer
- */
+//Site footer
 .site-footer {
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
@@ -139,8 +91,8 @@
 }
 
 .footer-col-1 {
-    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(5% - (#{$spacing-unit} / 2));
+    width:         calc(5% - (#{$spacing-unit} / 2));
 }
 
 .footer-col-2 {
@@ -153,20 +105,13 @@
     width:         calc(45% - (#{$spacing-unit} / 2));
 }
 
-@include media-query($on-laptop) {
-    .footer-col-1,
-    .footer-col-2 {
-        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-        width:         calc(50% - (#{$spacing-unit} / 2));
-    }
-
-    .footer-col-3 {
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
+.footer-col-4 {
+    width: -webkit-calc(60% - (#{$spacing-unit} / 2));
+    width:         calc(60% - (#{$spacing-unit} / 2));
 }
 
-@include media-query($on-palm) {
+
+@include media-query($on-phone) {
     .footer-col {
         float: none;
         width: -webkit-calc(100% - (#{$spacing-unit} / 2));
@@ -175,19 +120,17 @@
 }
 
 
-
-/**
- * Page content
- */
-.page-content {
-    padding: $spacing-unit 0;
+//Page content
+.page {
+    .page-content {
+        padding: $spacing-unit 0;
+    }
 }
 
-.page-heading {
-    font-size: 20px;
-}
 
-.post-list {
+//Projects page
+
+.projects-list {
     margin-left: 0;
     list-style: none;
 
@@ -196,42 +139,42 @@
     }
 }
 
-.post-meta {
+.project-meta {
     font-size: $small-font-size;
     color: $grey-color;
 }
 
-.post-link {
+.project-link {
     display: block;
     font-size: 24px;
 }
 
 
-
 /**
- * Posts
+ * Project
  */
-.post-header {
+
+ .project-header {
     margin-bottom: $spacing-unit;
 }
 
-.post-title {
+.project-title {
     font-size: 42px;
     letter-spacing: -1px;
     line-height: 1;
 
-    @include media-query($on-laptop) {
+    @include media-query($on-phone) {
         font-size: 36px;
     }
 }
 
-.post-content {
+.project-content {
     margin-bottom: $spacing-unit;
 
     h2 {
         font-size: 32px;
 
-        @include media-query($on-laptop) {
+        @include media-query($on-phone) {
             font-size: 28px;
         }
     }
@@ -239,7 +182,7 @@
     h3 {
         font-size: 26px;
 
-        @include media-query($on-laptop) {
+        @include media-query($on-phone) {
             font-size: 22px;
         }
     }
@@ -247,7 +190,7 @@
     h4 {
         font-size: 20px;
 
-        @include media-query($on-laptop) {
+        @include media-query($on-phone) {
             font-size: 18px;
         }
     }
