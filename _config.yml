@@ -1,9 +1,15 @@
 # Site settings
 title: Romain Butteaud
-email: contact@romainbutteaud.com
-description: Write an awesome description...
 url: "http://romainbutteaud.com"
-github_username: romainbutteaud
+
+contact:
+  email: contact@romainbutteaud.com
+  github: romainbutteaud
+  facebook: romainbutteaud
+  instagram: romainbutteaud
+  linkedin: romainbutteaud
+  stackoverflow: 1861084
+  twitter: romainbutteaud
 
 # Build settings
 markdown: kramdown
@@ -11,3 +17,4 @@ markdown: kramdown
 collections:
   projects:
     output: true
+

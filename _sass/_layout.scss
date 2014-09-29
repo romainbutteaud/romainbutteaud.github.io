@@ -62,8 +62,18 @@
 
 //Site footer
 .site-footer {
+    background: white;
+    position:fixed;
+    width:100%;
+    bottom:0px;
     border-top: 1px solid $grey-color-light;
-    padding: $spacing-unit 0;
+    padding-top: $spacing-unit / 2;
+    padding-bottom: $spacing-unit / 2;
+    text-align: center;
+    .icon {
+        width:25px;
+        margin-left: $spacing-unit / 4;
+    }
 }
 
 .footer-heading {
@@ -193,5 +203,13 @@
         @include media-query($on-phone) {
             font-size: 18px;
         }
+    }
+}
+
+#resume {
+    text-align: center;
+
+    .resume-preview {
+        width:300px;
     }
 }
