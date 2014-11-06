@@ -1,8 +1,8 @@
 ---
 layout: project
-title:  iSMS Stats
-year:   2011
-description: SMS statistics for iOS
-skills: csh / shell / Java
+title:  vivi.io
+year:   2014
+description: Instagram video player
+skills: Ruby on Rails, jQuery, Instagram API
+image: project-viviio.png
 ---
-iSMS stats so cool.

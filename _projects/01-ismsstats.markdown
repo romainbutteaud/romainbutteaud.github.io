@@ -3,6 +3,6 @@ layout: project
 title:  iSMS Stats
 year:   2011
 description: SMS statistics for iOS
-skills: csh / shell / Java
+skills: CSH, Java
+image: project-ismsstats.png
 ---
-iSMS stats so cool.

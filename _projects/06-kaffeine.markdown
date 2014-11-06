@@ -1,8 +1,8 @@
 ---
 layout: project
-title:  iSMS Stats
-year:   2011
-description: SMS statistics for iOS
-skills: csh / shell / Java
+title:  Kaffeine
+year:   2014
+description: Keeping free Heroku apps awake.
+skills: Ruby on Rails, Heroku, Cron
+image: project-kaffeine.png
 ---
-iSMS stats so cool.

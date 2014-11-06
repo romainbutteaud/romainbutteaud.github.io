@@ -1,8 +1,8 @@
 ---
 layout: project
-title:  Truckmania
-year:   2011
-description: iPhone app / Game engine
-skills: Java / Objective C
+title:  3615 UTC
+year:   2014
+description: UTC Student directory
+skills: Ruby on Rails, AngularJS, PostgreSQL
+image: project-3615utc.png
 ---
-Truckmania cool.

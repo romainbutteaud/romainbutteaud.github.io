@@ -140,24 +140,34 @@
 
 //Projects page
 
-.projects-list {
-    margin-left: 0;
-    list-style: none;
+#projects {
+    text-align:center;
+    color:white;
+    .project {
+        float:left;
+        width:46%;
+        border-radius:5px;
+        padding:10px;
+        margin-right:5px;
+        margin-bottom:5px;
 
-    > li {
-        margin-bottom: $spacing-unit;
+        .title {
+            font-size: 1.1em;
+            font-weight:bold;
+        }
+        .description {
+            font-size: $small-font-size;
+            margin-bottom:5px;
+        }
+        .image {
+            height:100px;
+        }
+    }
+    .project:hover {
+        background:$grey-color-dark;
     }
 }
 
-.project-meta {
-    font-size: $small-font-size;
-    color: $grey-color;
-}
-
-.project-link {
-    display: block;
-    font-size: 24px;
-}
 
 
 /**

@@ -1,8 +1,8 @@
 ---
 layout: project
 title:  Truckmania
-year:   2011
-description: iPhone app / Game engine
-skills: Java / Objective C
+year:   2012
+description: iPhone game and graphic engine
+skills: Objective-C, iPhone App, Graphic Engine
+image: project-truckmania.png
 ---
-Truckmania cool.

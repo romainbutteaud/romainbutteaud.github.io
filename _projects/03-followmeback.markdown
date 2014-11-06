@@ -1,8 +1,8 @@
 ---
 layout: project
-title:  Truckmania
-year:   2011
-description: iPhone app / Game engine
-skills: Java / Objective C
+title:  Followmeback
+year:   2014
+description: Who's not following you on Instagram?
+skills: Ruby on Rails, Instagram API
+image: project-followmeback.png
 ---
-Truckmania cool.

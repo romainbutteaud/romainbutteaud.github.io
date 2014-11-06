@@ -5,22 +5,14 @@ id: projects
 permalink: /projects/
 ---
 
-To come... :)
-
-<!-- <div class="home">
-
-  <ul class="projects-list">
-    {% for project in site.projects %}
-    <li>
-      <span class="project-meta">{{ project.year }}</span>
-      <h2>
-        <a class="project-link" href="{{ project.url | prepend: site.baseurl }}">
-          {{ project.title }}
-        </a>
-      </h2>
-    </li>
+<div class="home">
+  <div id="projects">
+    {% for project in site.projects reversed %}
+    <div class="project">
+      <div class="title">{{project.title}}</div>
+      <div class="description">{{project.description}}</div>
+      <div><img class="image" src="/images/{{project.image}}"/></div>
+    </div>
     {% endfor %}
-  </ul>
-
+  </div>
 </div>
- -->
